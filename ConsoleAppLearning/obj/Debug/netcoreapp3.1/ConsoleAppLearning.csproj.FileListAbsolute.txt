@@ -10,3 +10,4 @@ C:\Users\mcao3\source\repos\ConsoleAppLearning\ConsoleAppLearning\obj\Debug\netc
 C:\Users\mcao3\source\repos\ConsoleAppLearning\ConsoleAppLearning\obj\Debug\netcoreapp3.1\ConsoleAppLearning.dll
 C:\Users\mcao3\source\repos\ConsoleAppLearning\ConsoleAppLearning\obj\Debug\netcoreapp3.1\ConsoleAppLearning.pdb
 C:\Users\mcao3\source\repos\ConsoleAppLearning\ConsoleAppLearning\obj\Debug\netcoreapp3.1\ConsoleAppLearning.genruntimeconfig.cache
+C:\Users\mcao3\source\repos\ConsoleAppLearning\ConsoleAppLearning\obj\Debug\netcoreapp3.1\ConsoleAppLearning.csprojAssemblyReference.cache

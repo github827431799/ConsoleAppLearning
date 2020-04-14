@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -7,11 +8,10 @@ namespace ConsoleAppLearning
 {
     class Pi
     {
-        //MonteCarlo
         public static void GetByMonteCarlo()
         {
             long hitSum = 0;
-            long totalSum = 20000000;
+            long totalSum = 2000000000; 
             Random r = new Random();
             int totalThread = 8;
             Task[] taskArray = new Task[totalThread];
@@ -20,7 +20,7 @@ namespace ConsoleAppLearning
 
             DateTime startTime = DateTime.Now;
             for (int t = 0; t < totalThread; t++)
-            {
+            {                
                 taskArray[t] = Task.Run(() =>
                 {
                     Double x;
@@ -38,7 +38,7 @@ namespace ConsoleAppLearning
                         if (x * x + y * y <= 1.0)
                         {
                             hitSumTask++;
-
+                            
                         }
                     }
                     lock (obj)
@@ -81,9 +81,9 @@ namespace ConsoleAppLearning
                         subTotal += signal * 1 / (2 * i - 1);
                         signal = -signal;
                         //Console.WriteLine("#" + Task.CurrentId + ":" + (subLoopNumber * loopNumber + 1) + "->" + ((subLoopNumber + 1) * loopNumber));
-
+                
                     }
-                    Console.WriteLine("#" + Task.CurrentId + ":" + subTotal);
+                    Console.WriteLine("#" + Task.CurrentId + ":" + subTotal); 
                     lock (obj)
                     {
                         totalSum = totalSum + subTotal;
