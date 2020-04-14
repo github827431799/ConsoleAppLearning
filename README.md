@@ -1,0 +1,2 @@
+# ConsoleAppLearning
+For C# learning
